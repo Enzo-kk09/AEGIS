@@ -1,0 +1,13 @@
+.venv/
+.runtime/
+__pycache__/
+.pytest_cache/
+developer_test/data/
+developer_test/models/*.onnx
+tests/artifacts/
+*.pyc
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
+*.download

@@ -1,0 +1,8 @@
+fastapi==0.142.2
+starlette==1.7.0
+anyio==4.15.1
+uvicorn==0.54.0
+opencv-python-headless==4.13.0.92
+numpy==2.5.3
+python-multipart==0.0.32
+Pillow==12.3.0
