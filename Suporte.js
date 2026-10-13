@@ -115,7 +115,7 @@
           <form method="post" id="help-form" aria-labelledby="help-title" class="help-form">
             <div class="field">
               <label for="help-need">Explique sua necessidade</label>
-              <textarea class="input" id="help-need" name="need" required minlength="10" maxlength="1500" placeholder="Descreva a situação e o que você precisa…" style="min-height:145px"></textarea>
+              <textarea class="input" id="help-need" name="need" required minlength="10" maxlength="1500" placeholder="Descreva a situação e o que você precisa…" style="height:145px;min-height:145px;resize:none"></textarea>
             </div>
             <div class="field">
               <label for="help-institution">Nome da instituição</label>

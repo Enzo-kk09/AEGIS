@@ -225,8 +225,11 @@ small {
 .input:focus {
   border-color: var(--blue);
 }
+textarea {
+  resize: none;
+}
 textarea.input {
-  resize: vertical;
+  resize: none;
   min-height: 100px;
   line-height: 1.5;
 }
