@@ -85,17 +85,13 @@
             </div>
             <div class="auth-wordmark">AEGIS</div>
             <p class="auth-system-name">Advanced Educational Guardian<br>Intelligence System</p>
-            <span class="auth-kicker">Console de inteligência educacional</span>
-            <h1 id="welcome-title">Cada acesso.<br>Cada aluno.<br>Uma visão completa.</h1>
-            <p class="auth-description">Informação organizada para acompanhar a rotina da sua instituição com clareza e responsabilidade.</p>
-            <div class="auth-features"><span>${icon('shield')}Acompanhamento de acessos</span><span>${icon('users')}Gestão da comunidade escolar</span><span>${icon('grid')}Informação em um só lugar</span></div>
+            <h1 id="welcome-title">Controle de acesso<br>escolar</h1>
           </div>
           <p class="auth-story-footer"><span>AEGIS / Plataforma educacional</span><span>CIMOL · 2026</span></p>
         </header>
         <main class="auth-body" id="main" tabindex="-1" aria-labelledby="login-title">
           <div class="auth-wrap">
-            ${demoBadge()}
-            <h2 id="login-title">Seu workspace.<br>Pronto para começar.</h2>
+            <h2 id="login-title">Entrar no AEGIS</h2>
             <p class="auth-intro">Entre com os dados da sua instituição.</p>
             <form method="post" class="auth-form" id="login-form" aria-labelledby="login-title">
               <div class="field">
@@ -109,19 +105,12 @@
                   <button class="icon-button" type="button" data-action="toggle-password" aria-label="Mostrar senha" aria-pressed="false">${icon('eye')}</button>
                 </div>
               </div>
-              <p class="form-error">
-              </p>
+              <p class="form-error"></p>
               <button class="btn primary full" type="submit">${icon('lock')}Entrar</button>
             </form>
             <div class="separator">ou</div>
             <a class="btn full" href="SolicitarAcesso.html">Solicitar acesso / contato</a>
-            <div class="demo-credentials">
-              <strong>Acesso inicial</strong>
-              <br>Instituição: CIMOL · Senha: <strong>AEGIS2026</strong>
-              <br>Código PRB: <strong>123456</strong>
-              <button class="btn ghost small full" type="button" data-action="demo-login">Acessar demonstração</button>
-              <p class="form-note">Dados fictícios salvos neste navegador. Acesso, câmeras e reconhecimento facial são simulados; as solicitações não são enviadas.</p>
-            </div>
+            <button class="btn ghost small full demo-entry" type="button" data-action="demo-login">Ver demonstração</button>
             <nav class="auth-links" aria-label="Informações legais">
               <a href="Privacidade.html">Política de Privacidade</a>
             </nav>

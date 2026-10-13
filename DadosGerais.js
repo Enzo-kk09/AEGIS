@@ -125,7 +125,7 @@
   }
 
   function renderDashboard() {
-    return `${head('Dados gerais',pages.dashboard[1],`<a class="btn" href="Relatorio.html">${icon('file')}Abrir relatório</a>`,session.institution)}${tabs()}<section class="overview-strip" aria-label="Resumo dos registros demonstrativos"><div><span class="eyebrow">Pontos monitorados</span><strong>${cameras.length.toString().padStart(2,'0')}</strong><small>Registros de exemplo</small></div><div><span class="eyebrow">Identificações confirmadas</span><strong>${cameras.filter(c=>c.status==='confirmed').length.toString().padStart(2,'0')}</strong><small>No último registro por câmera</small></div><div><span class="eyebrow">Aguardando revisão</span><strong>${cameras.filter(c=>c.status!=='confirmed').length.toString().padStart(2,'0')}</strong><small>Incertas ou não identificadas</small></div><a href="PRB.html">Revisar registros ${icon('arrow')}</a></section><div class="toolbar">
+    return `${head('Dados gerais',pages.dashboard[1],`<a class="btn" href="Relatorio.html">${icon('file')}Abrir relatório</a>`,session.institution)}${tabs()}<div class="toolbar">
         <select class="input" id="camera-select" aria-label="Selecionar câmera">
           <option value="all">Todas as câmeras</option>${cameras.map(c=>`<option value="${c.id}" ${filters.camera===c.id?'selected':''}>${esc(c.location)}</option>`).join('')}</select>
         <div class="segmented grow" role="group" aria-label="Período de consulta">${[['today','Hoje'],['week','7 dias'],['month','30 dias']].map(([value,label])=>`<button type="button" class="${filters.period===value?'active':''}" data-action="period" data-value="${value}" aria-pressed="${filters.period===value}">${label}</button>`).join('')}</div>
